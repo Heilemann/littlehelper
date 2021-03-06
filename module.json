@@ -1,0 +1,10 @@
+{
+  "name": "littlehelper",
+  "title": "Little Helper",
+  "description": "Just a few helping bits and pieces for my home games.",
+  "author": "Michael Heilemann",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.7.9",
+  "scripts": ["/scripts/test.js"],
+  "styles": ["/styles/styles.css"]
+}

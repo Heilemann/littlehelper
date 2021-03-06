@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: Roboto !important;
+  font-size: 13px;
+}
+
+.app {
+  background: rgba(30, 30, 30, 0.78);
+}
+
+.window-app {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
+  border: 1px solid #ffffff0f;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.window-app .window-header {
+  flex: 0 0 40px;
+  line-height: 40px;
+  border-bottom: 0;
+  padding: 0 15px;
+}
+
+.window-app .window-header .window-title {
+  font-weight: bold;
+}
+
+.window-app .window-header a {
+  margin-left: 15px;
+}
+
+/* .window-app .window-content {
+  background: white;
+} */
+
+.notification {
+  backdrop-filter: blur(12px);
+}
+
+#players {
+  backdrop-filter: blur(12px);
+  background: rgba(10, 10, 10, 0.78);
+}
+
+#controls {
+  top: 75px;
+}
+
+#controls,
+#controls .control-tools {
+  background: rgba(30, 30, 30, 0.78);
+  backdrop-filter: blur(20px);
+  padding: 3px;
+  border-radius: 8px;
+}
+
+#controls .scene-control,
+#controls .control-tool {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* #controls li {
+  backdrop-filter: blur(50px);
+} */
+
+#controls li:last-child {
+  margin-bottom: 0;
+}
+
+#controls .control-tools {
+  left: 50px;
+  top: -3px;
+}
+
+
+
+#hotbar #macro-list {
+  border: none;
+}
+
+#hotbar .macro {
+  backdrop-filter: blur(50px);
+  margin-right: 1px;
+  border-radius: 4px;
+}
+
+#sidebar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  border: none;
+  backdrop-filter: blur(20px);
+  border-radius: 0;
+}
+
+#sidebar-tabs {
+  margin: 0;
+  border: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,.7);
+  z-index: 10;
+}
+
+#sidebar-tabs > .item {
+  border-radius: 0;
+}
+
+#sidebar-tabs > .item.active {
+  border: none;
+  box-shadow: none;
+  background: #b9360e;
+}
+
+.sidebar-tab:not(#chat) {
+  padding: 10px 5px;
+}
+
+#combat #combat-round .encounters h3 {
+  font-size: 14px;
+}
+
+.directory-list {
+  padding-top: 5px;  
+}
+
+.sidebar-tab .directory-list .entity {
+  border-top: 0;
+}
+
+#chat-log > li.chat-message {
+  padding: 10px;
+  border: none;
+  margin: 10px 0;
+  border-radius: 0;
+}
+
+.chat-message .chat-message {
+  padding: 0;
+}
+
+.message-header {
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  outline: none;
+  border-radius: 100px;
+  background: #80808073;
+  border: none;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  /* border-radius: auto; */
+}
