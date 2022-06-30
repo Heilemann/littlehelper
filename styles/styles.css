@@ -1,5 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --alienfont: 'Wallpoet';
+  --fontsize: 15px;
+}
+
+:root {
+  --aliengreen: #8ca6ac !important;
+  --blue: #8ca6ac !important;
+  --black: #151515 !important;
+  --white: #ffffff !important;
+}
 
 body {
   font-family: Roboto !important;
@@ -12,7 +24,7 @@ body {
 
 .window-app {
   backdrop-filter: blur(20px);
-  box-shadow: 0 20px 40px rgba(0,0,0,.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   border: 1px solid #ffffff0f;
   border-radius: 8px;
   overflow: hidden;
@@ -78,8 +90,6 @@ body {
   top: -3px;
 }
 
-
-
 #hotbar #macro-list {
   border: none;
 }
@@ -103,7 +113,7 @@ body {
 #sidebar-tabs {
   margin: 0;
   border: 0;
-  box-shadow: 0 0 20px rgba(0,0,0,.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
 
@@ -126,7 +136,7 @@ body {
 }
 
 .directory-list {
-  padding-top: 5px;  
+  padding-top: 5px;
 }
 
 .sidebar-tab .directory-list .entity {
@@ -163,4 +173,98 @@ body {
 ::-webkit-scrollbar-track {
   box-shadow: none;
   /* border-radius: auto; */
+}
+
+/* ALIEN RPG */
+
+.alienrpg .window-content {
+  padding: 20px;
+  /* background: rgba(30, 30, 30, 0.78); */
+  background: transparent;
+}
+
+.alienrpg .actor-header,
+.sheet nav.sheet-tabs,
+.alienrpg .alienrpg .sheet-body,
+.alienrpg .tab,
+.alienrpg .editor,
+.alienrpg .vehicle-header {
+  background: transparent;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+input[type='date'],
+input[type='time'] {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sheet nav.sheet-tabs {
+  border: none;
+}
+
+.far {
+  margin-right: 2px;
+  font-size: 12px;
+}
+
+.Item1 {
+  text-align: left;
+  padding: 10px;
+}
+
+.Item3 {
+  padding: 10px;
+}
+
+.Item4 {
+  padding: 5px 10px 10px;
+}
+
+.Item6 {
+  padding: 10px;
+}
+
+.Item8 {
+  padding: 10px;
+}
+
+.Item9 {
+  padding: 10px;
+}
+
+.alienrpg .resource-label {
+  /* font-weight: bold; */
+  font-size: 13px;
+  line-height: 1.3em;
+  text-align: left;
+  padding-left: 0;
+}
+
+.alienrpg h2 {
+  margin: 0;
+}
+
+.grid-Char-Att {
+  padding: 0;
+}
+
+.grid-attr {
+  border: 0;
+  grid-template-columns: 270px 35px 30px;
+}
+
+.alienrpg .items-list {
+  padding: 0;
+}
+
+.grid-items {
+  grid-template-columns: 2em 25em 5em 5em 4em 2em;
+}
+
+.tabs .item.active {
+  text-decoration: none;
+  background-color: var(--aliengreen);
+  color: black;
 }
